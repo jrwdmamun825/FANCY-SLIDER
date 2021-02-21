@@ -75,7 +75,7 @@ const createSlider = () => {
     const div = document.getElementById('warning');
     const element = document.createElement('h2');
     element.innerHTML = `<div class="alert alert-danger" role="alert">
-      <h6 class="text-center">sorry! you can not set negative value</h6>
+      <h6 class="text-center">sorry! you can not set negative value!</h6>
       </div>`;
     div.appendChild(element);
     return div.appendChild(element);
@@ -94,13 +94,6 @@ const createSlider = () => {
     changeSlide(slideIndex);
   }, duration);
 }
-
-
-
-
-
-
-
 
 // change slider index 
 const changeItem = index => {
